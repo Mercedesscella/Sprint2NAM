@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> NAM Studio </title>
+  <link rel="shortcut icon" type= "image/x-icon" href="/images/nam4x.png">
+  	<!-- Font Awesome Stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'>
+  <link rel='stylesheet' href='pruevaNavegador.css'>
+  <script src="https://kit.fontawesome.com/eb81e2a038.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--<%- include('./partials/header.ejs') %>-->
+
+	
+<header>
+  <nav class="container-fluid">
+    <div class= "row">
+           <img class="col-2" src="logo.png" alt="logo" >
+           <form class="col-8" action="search.php" method="POST">
+             <div>
+               <input type="text" name="search" width=100% placeholder="Busca por nombre o categoría">
+               <button type="submit" ><i class="fas fa-search"></i> </button>
+             </div>
+           </form>
+           <div class="log col-2">
+             <a href="logIn.ejs">INGRESAR</a>
+             <a href="singUp.ejs">REGISTRARSE</a>
+           </div>
+    </div>
+    <div class="container-fluid">
+      <div class= "row">
+    <div class="col-12 col-md-2 col-lg-2">
+      <a href="index.ejs">INICIO</a>
+    </div>
+    <div class="col-12 col-md-2 col-lg-2">
+      <a href="collection.ejs">COLECCIÓN</a>
+    </div>
+    <div class="col-12 col-md-2 col-lg-2">
+      <a href="index.ejs">TENDENCIA</a>
+    </div>
+    <div class="col-12 col-md-2 col-lg-2">
+      <a href="index.ejs">QUIÉNES SOMOS</a>
+    </div>
+    <div class="col-12 col-md-2 col-lg-2">
+      <a href="index.ejs">CONTACTO</a>
+    </div>
+    <div class="col-12 col-md-2 col-lg-2">
+      <a href="index.ejs">CARRITO</a>
+    </div>
+</div>
+</div>
+  </nav>
+</header>
+
+
+
+
+  <div class="container-fluid">
+      <div class="cargaproducto"> 
+          <div class="container1">
+            <input type="text" name="CodigoArticulo">
+            <input type="text" name="NombreDiseño">
+            <input type="text" name="Descripcion">
+            <input type="text" name="etiquetas">
+            <select name="categorias">
+              <option value= disabled selected>CATEGORIA</option>
+              <option value= disabled selected>Floral</option>
+              <option value= disabled selected>Otoño</option>
+              <option value= disabled selected>Exclusivo</option>
+            </select>
+          </div>
+          <div class="container2">
+
+          </div>
+      </div>
+    </div>
+
+
+
+	
+    <!--<%- include('./partials/footer.ejs') %>-->
+		  
+      <footer class="container-fluid">
+        <div class="footer row"> 
+          <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+            <h4>GRUPO 1</h4> 
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-2">    
+            <h5>Integrantes:</h5>
+            <p>Natalia Granadé</br>
+            Agustina Pinheiro</br>
+            Mercedes Cella</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3"> 
+            <ul type="none"> 
+              <li><a href="mailto:info@namstudio.com">info@namstudio.com</a></li>
+              <li><a href="tel:+541112345555">+541112345555</a></li>
+              <li>Monroe 860, CABA</li>
+            </ul>
+          </div>   
+          <div class="col-6 col-sm-6 col-md-4 col-lg-5"> 
+            <p> NAM Studio 2020, Todos los derechos reservados.</p> 
+          </div>     
+        </div> 
+      </footer>      
+      
+
+
+    <script src="/javascript/bootstrap.min.js"></script>
+    <script src="/javascript/jquery.js"></script>
+    <script src="/javascript/popper.js"></script>
+    
+  </body>
+  </html>
